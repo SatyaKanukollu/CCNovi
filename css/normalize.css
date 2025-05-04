@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css Updated to modern standarts*/
 
 /* Document
    ========================================================================== */
@@ -10,6 +10,8 @@
 
 html {
   line-height: 1.15; /* 1 */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -77,6 +79,10 @@ a {
   background-color: transparent;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -117,6 +123,11 @@ small {
   font-size: 80%;
 }
 
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
@@ -148,6 +159,12 @@ sup {
 img {
   border-style: none;
 }
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
 
 /* Forms
    ========================================================================== */
@@ -199,6 +216,14 @@ button,
   -webkit-appearance: button;
 }
 
+
+button:focus,
+[type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 /**
  * Remove the inner border and padding in Firefox.
  */

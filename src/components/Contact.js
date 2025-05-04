@@ -1,3 +1,45 @@
+export function renderAbout() {
+  return `
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              Classic Collision is dedicated to restoring your vehicle to its pre-accident condition with precision and care.
+              Our expert technicians are highly trained in the latest repair techniques, ensuring top-quality results.
+            </p>
+            <p>
+              We pride ourselves on our commitment to customer satisfaction. We use only the best materials and advanced
+              equipment to ensure every repair meets the highest standards.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="public/classic-collisions-logo.png" alt="Classic Collision Logo" class="about-logo">
+          </div>
+        </div>
+        <div class="our-values">
+            <h3>Our Values</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-star"></i>
+                        <h4>Quality</h4>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Customer Focus</h4>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-tools"></i>
+                        <h4>Expertise</h4>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
 export function renderContact() {
   return `
     <section id="contact" class="section">

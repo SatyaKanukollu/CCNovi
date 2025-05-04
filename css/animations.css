@@ -210,7 +210,7 @@
 }
 
 /* Hero Section parallax effect */
-#hero {
+#hero-section {
   overflow: hidden;
 }
 
@@ -328,7 +328,7 @@
 }
 
 /* Subtle header scroll animation */
-@keyframes headerScroll {
+@keyframes headerScroll { /* Add animation to header when scrolled */
   from {
     transform: translateY(-100%);
     opacity: 0;
@@ -338,7 +338,9 @@
     opacity: 1;
   }
 }
+.header {
 
-#header.scrolled {
-  animation: headerScroll 0.5s forwards;
+}
+.header.scrolled {
+    animation: headerScroll 0.5s forwards;
 }
